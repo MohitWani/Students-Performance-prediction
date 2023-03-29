@@ -2,8 +2,9 @@ pandas
 numpy
 scikit-learn
 scipy
+dataclasses
 #catboost
-#xgboost
-#dill
-#Flask
--e .
+xgboost
+dill
+Flask
+#-e .
