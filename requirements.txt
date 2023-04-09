@@ -3,7 +3,6 @@ numpy
 scikit-learn
 scipy
 dataclasses
-#catboost
 xgboost
 dill
 Flask
