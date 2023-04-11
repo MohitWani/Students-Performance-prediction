@@ -2,6 +2,8 @@ import os
 import pickle
 import sys
 
+import dill
+
 from exception import CustomException
 
 from sklearn.metrics import r2_score
@@ -40,3 +42,10 @@ def evaluate_models(X_train, y_train, X_test, y_test, models):
 
     except Exception as e:
         raise CustomException(e, sys)
+
+def load_data(file_path):
+    try:
+        with open(file_path, 'rb') as file:
+            return pickle.load(file)
+    except Exception as e:
+        raise CustomException(e,sys)

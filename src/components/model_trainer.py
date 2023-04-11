@@ -9,10 +9,10 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 
-from exception import CustomException
-from logger import logging
+from pipeline.exception import CustomException
+from pipeline.logger import logging
 
-from utils import save_object,evaluate_models
+from pipeline.utils import save_object,evaluate_models
 
 @dataclass()
 class ModelTrainerConfig:

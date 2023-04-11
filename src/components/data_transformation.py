@@ -10,10 +10,10 @@ from sklearn.impute import SimpleImputer
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 
-from exception import CustomException
-from logger import logging
+from pipeline.exception import CustomException
+from pipeline.logger import logging
 
-from utils import save_object
+from pipeline.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
